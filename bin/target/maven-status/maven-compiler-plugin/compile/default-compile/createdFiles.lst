@@ -1,0 +1,14 @@
+com\example\entity\User.class
+com\example\servicee\RegisterService.class
+com\example\controller\LoginController.class
+com\example\controller\ProductController.class
+com\example\servicee\UserService.class
+com\example\service\impl\ProductServiceImpl.class
+com\example\repository\ProductRepository.class
+com\example\service\impl\UserServiceImpl.class
+com\example\ProductUserInventoryApplication.class
+com\example\controller\HomeController.class
+com\example\repository\UserRepository.class
+com\example\entity\Product.class
+com\example\controller\RegisterController.class
+com\example\servicee\ProductService.class
