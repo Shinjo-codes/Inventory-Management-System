@@ -33,19 +33,14 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Product> products;
 
-
-
     public User(String userName, String password) {
         super();
         this.userName = userName;
         this.password = password;
-
     }
-
     public User() {
 
     }
-
 
     // Getters and setters
     public Long getId() {
@@ -59,8 +54,6 @@ public class User {
     public String getUserName() {
         return userName;
     }
-
-
 
     public void setUserName(String userName) {
         this.userName = userName;

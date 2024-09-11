@@ -1,4 +1,4 @@
-package com.example.servicee;
+package com.example.service;
 
 import com.example.entity.User;
 import com.example.repository.UserRepository;
@@ -10,6 +10,10 @@ public class LoginService {
 
     @Autowired
     private UserRepository userRepository;
+
+    public LoginService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
 
     public User login(String userName) {

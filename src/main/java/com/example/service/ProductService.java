@@ -1,15 +1,20 @@
-package com.example.service.servicee;
+package com.example.service;
+
+import com.example.entity.Product;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-import com.example.entity.Product;
-
+@Service
 public interface ProductService {
-    List<Product> getAllProduct() ;
+    List<Product> getAllProduct(Sort sort) ;
 
-    Product saveProduct(Product product);
+    void saveProduct(Product product);
 
 	Product getProductById(Long id);
 
-	Product updateProduct(Product product);
+	void updateProduct(Product product);
+
+    void deleteProduct(Product product);
 }
